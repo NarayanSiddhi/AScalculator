@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">SignUp</string>
+    <string name="sign">STUDENT SIGN UP</string>
+    <string name="SButton">Sign-Up</string>
+    <string name="User">Username</string>
+    <string name="Pass">Password</string>
+    <string name="log">LOG IN</string>
+    <string name="LButton">Log-In</string>
+    <string name="RegNum">Registration Number</string>
+    <string name="Email">Email</string>
+    <string name="Course">Course</string>
+    <string name="home">Home</string>
+    <string name="innovation">Innovation</string>
+    <string name="scholorship">Scholorships</string>
+    <string name="event">Events</string>
+    <string name="internship">Internships</string>
+    <string name="news">News Feed</string>
+</resources>

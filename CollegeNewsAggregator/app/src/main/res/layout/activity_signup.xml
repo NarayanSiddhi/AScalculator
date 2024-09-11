@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign"
+        android:textSize="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"/>
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/signup"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/ubg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ubg"/>
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="@string/User"
+            android:layout_toEndOf="@+id/ubg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/rbg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rbg"/>
+
+        <EditText
+            android:id="@+id/regnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="@string/RegNum"
+            android:layout_toEndOf="@+id/rbg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emailid"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/register"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/ebg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ebg"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="@string/Email"
+            android:layout_toEndOf="@+id/ebg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/courses"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/emailid"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/cbg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cbg"/>
+
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="@string/Course"
+            android:layout_toEndOf="@+id/cbg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/courses"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/pbg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pbg"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="@string/Pass"
+            android:layout_toEndOf="@+id/pbg"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/SButton"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signbtn"
+        android:text="Already have an account?"
+        android:layout_marginStart="100dp"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/directlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginStart="155dp"
+        android:text="@string/LButton"
+        android:background="@drawable/button"/>
+
+</RelativeLayout>
